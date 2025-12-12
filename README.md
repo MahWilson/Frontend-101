@@ -1,16 +1,89 @@
-# React + Vite
+# Notes App - Frontend 101 Workshop
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fun, colorful notes app built with React and Vite, featuring:
+- ✨ Animated gradient background
+- 🎨 Colorful sticky note design with random colors
+- 🔍 Search functionality
+- 📊 Note count badge
+- 🎯 Responsive grid layout
+- 💫 Smooth animations
+- 🎮 Minecraft-like pixelated font
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Installation
 
-## React Compiler
+```bash
+npm install
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Development
 
-## Expanding the ESLint configuration
+```bash
+npm run dev
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Build
+
+```bash
+npm run build
+```
+
+## Deployment to Netlify
+
+### Option 1: Manual Deployment (Quick Demo)
+
+1. Run `npm run build` in your terminal
+2. Go to [Netlify](https://netlify.com)
+3. Create a new site
+4. Drag and drop the `/dist` folder
+5. Get your live URL instantly!
+
+### Option 2: Automatic GitHub Deployment (Recommended)
+
+1. Push your code to GitHub
+2. Go to Netlify → Add new site → Import from Git
+3. Connect your GitHub account
+4. Select your repository
+5. Netlify will auto-detect settings from `netlify.toml`
+6. Click Deploy
+7. Every push to GitHub = automatic new deployment! 🚀
+
+### Important: Create netlify.toml File
+
+**If you're building from scratch** (not forking this repo), you need to create a `netlify.toml` file in your project root:
+
+Create a file called `netlify.toml` with this content:
+
+```toml
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+```
+
+This file tells Netlify:
+- How to build your app (`npm run build`)
+- Where to find the built files (`dist` folder)
+- How to handle routing (for single-page apps)
+
+**Note:** If you forked/cloned this repo, the `netlify.toml` file is already included! ✅
+
+## Workshop Steps
+
+- Step 1: Create React App
+- Step 2: Add Note Input
+- Step 3: Display Notes
+- Step 4: Delete Notes
+- Step 5: Styling & Enhancements
+
+## Tech Stack
+
+- React 19
+- Vite
+- CSS3 (with animations)
+- Google Fonts (Press Start 2P)
