@@ -11,11 +11,46 @@ A fun, colorful notes app built with React and Vite, featuring:
 
 ## Getting Started
 
-### Installation
+### Option A: Use Template (Recommended for Workshops)
 
-```bash
-npm install
-```
+1. Go to: `https://github.com/MahWilson/Frontend-101`
+2. Click the green **"Use this template"** button (top right)
+3. Click **"Create a new repository"**
+4. Choose a repository name and click **"Create repository from template"**
+5. Clone your new repo: `git clone https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git`
+6. Navigate into folder: `cd YOUR-REPO-NAME`
+7. Install dependencies: `npm install`
+
+✅ **Done!** You now have the project with `netlify.toml` already included.
+
+### Option B: Fork the Repository
+
+1. Go to: `https://github.com/MahWilson/Frontend-101`
+2. Click the **"Fork"** button (top right)
+3. Clone your fork: `git clone https://github.com/YOUR-USERNAME/Frontend-101.git`
+4. Navigate into folder: `cd Frontend-101`
+5. Install dependencies: `npm install`
+
+✅ **Done!** You now have the project with `netlify.toml` already included.
+
+### Option C: Clone Directly (Read-Only)
+
+1. Go to: `https://github.com/MahWilson/Frontend-101`
+2. Click the green **"Code"** button and copy the URL
+3. Clone: `git clone https://github.com/MahWilson/Frontend-101.git`
+4. Navigate into folder: `cd Frontend-101`
+5. Install dependencies: `npm install`
+
+⚠️ **Note:** This creates a read-only copy. To push changes, fork it first.
+
+### Option D: Build From Scratch
+
+If you're following along step-by-step:
+
+1. Create React app: `npm create vite@latest my-notes-app -- --template react`
+2. Navigate: `cd my-notes-app`
+3. Install: `npm install`
+4. **Create `netlify.toml` file** (see Deployment section below)
 
 ### Development
 
