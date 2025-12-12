@@ -1,10 +1,10 @@
-# 🚀 React Setup — Beginner-Friendly (Vite Only)
+# 🚀 React Setup — Beginner-Friendly Guide
 
 This guide will help you set up your development environment before the workshop. Choose one path that works best for you!
 
 ---
 
-## PATH 1 — Local Setup (VS Code + Node.js + Vite)
+## PATH 1 — Local Setup (VS Code + Node.js + React)
 
 ### Step 0 — Requirements
 
@@ -41,7 +41,7 @@ npm -v
 
 - You should see version numbers for both → Node.js and npm installed correctly ✅
 
-> **Why Node.js?** npm (comes with Node) is required to install and run React/Vite.
+> **Why Node.js?** npm (comes with Node) is required to install and run React projects.
 
 ---
 
@@ -52,10 +52,10 @@ npm -v
 3. Right-click → **New → Folder** → name it:
 
 ```text
-my-vite-app
+my-react-app
 ```
 
-4. This is where your Vite project will live.
+4. This is where your React project will live.
 
 ---
 
@@ -67,25 +67,12 @@ my-vite-app
 
 > **What you'll see:**
 > VS Code sidebar will be mostly empty. Window title shows: `my-vite-app — Visual Studio Code`.
+> 
+> **Note:** The folder name can be anything (e.g., `my-react-app`, `notes-app`). We're creating a React project!
 
----
 
-### Step 5 — Install VS Code Extensions (Optional but Recommended)
 
-| Extension                   | Purpose                    |
-| --------------------------- | -------------------------- |
-| ES7+ React/Redux Snippets   | Fast React code shortcuts  |
-| JavaScript (ES6) Syntax     | Highlight JS syntax        |
-| Prettier                    | Code formatting            |
-| npm Scripts                 | Run commands easily        |
-| GitHub Copilot *(optional)* | AI assistance while coding |
-
-1. Click **Extensions icon** (left toolbar) or press `Ctrl+Shift+X`
-2. Search by name → Click **Install**
-
----
-
-### Step 6 — Create Vite Project
+### Step 5 — Create React Project
 
 1. Open **VS Code terminal**:
    - **Windows:** `Terminal → New Terminal` or press `` Ctrl+` ``
@@ -94,23 +81,29 @@ my-vite-app
 2. Run these commands one by one:
 
 ```bash
-npm create vite@latest my-app -- --template react
+npm create vite@latest my-app --template react
 cd my-app
 npm install
 npm run dev
 ```
 
-3. Open browser: `http://localhost:5173`
-4. You should see **Vite + React welcome page** ✅
+> ⚠️ **IMPORTANT:** Make sure you're in the `/my-app` directory before running `npm install` and `npm run dev`!
+> - The `npm create vite@latest` command creates a folder called `my-app` inside your current directory
+> - You MUST run `cd my-app` to enter that folder first
+> - If you're in the wrong directory, commands like `npm run dev` or `npm run build` won't work
+> - To check your current directory, look at your terminal prompt or run `pwd` (Mac/Linux) or `cd` (Windows)
 
-> ✅ **Starter code base**: This is what you get immediately after `npm create vite@latest` + `npm install`.  
+3. Open browser: `http://localhost:5173`
+4. You should see **React welcome page** ✅
+
+> ✅ **Starter code base**: This is what you get immediately after creating the React project + `npm install`.  
 > ✅ **Complete code base**: After you paste or add the Notes App, Counter, or other components we provide.
 
 ---
 
-### Step 7 — Starter + Complete Code Base Structure (Local)
+### Step 6 — Starter + Complete Code Base Structure (Local)
 
-**Starter (after Vite install)**
+**Starter (after React project creation)**
 
 ```
 my-app/
@@ -200,13 +193,6 @@ my-app/
 
 ---
 
-## ✅ Summary Table
-
-| Path       | Setup                 | Preview           | Deploy                         | Starter / Complete                                                |
-| ---------- | --------------------- | ----------------- | ------------------------------ | ----------------------------------------------------------------- |
-| Local      | VS Code + Node + Vite | `npm run dev`     | Drag & drop / GitHub → Netlify | Starter: after Vite install, Complete: after adding workshop code |
-| StackBlitz | Browser editor        | Auto live preview | GitHub → Netlify               | Starter: forked template, Complete: after adding workshop code    |
-
 ---
 
 ## 🎯 Which Path Should You Choose?
@@ -258,7 +244,7 @@ my-app/
 
 After completing setup:
 
-1. ✅ Make sure you can see the Vite welcome page (local) or StackBlitz preview
+1. ✅ Make sure you can see the React welcome page (local) or StackBlitz preview
 2. ✅ Familiarize yourself with the file structure
 3. ✅ You're ready for the workshop! 🎉
 
@@ -268,7 +254,7 @@ After completing setup:
 
 - [ ] VS Code installed (if using local setup)
 - [ ] Node.js installed and verified (`node -v` works)
-- [ ] Vite project created and running (`npm run dev` shows welcome page)
+- [ ] React project created and running (`npm run dev` shows welcome page)
 - [ ] OR StackBlitz account created and React project forked
 - [ ] Browser ready (Chrome/Firefox/Edge recommended)
 - [ ] Internet connection stable

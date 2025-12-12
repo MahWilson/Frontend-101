@@ -9,6 +9,16 @@ A fun, colorful notes app built with React and Vite, featuring:
 - 💫 Smooth animations
 - 🎮 Minecraft-like pixelated font
 
+## 📋 Pre-Workshop Setup
+
+**Before the workshop, please complete the setup guide:**
+
+👉 **[SETUP_GUIDE.md](./SETUP_GUIDE.md)** - Complete setup instructions for VS Code + Node.js (Local) or StackBlitz (Online)
+
+This will help you get your development environment ready before we start coding!
+
+---
+
 ## Getting Started
 
 ### Option A: Use Template (Recommended for Workshops)
